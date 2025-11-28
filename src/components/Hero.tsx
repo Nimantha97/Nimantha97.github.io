@@ -89,7 +89,7 @@ export const Hero = () => {
             <Button
               onClick={() => scrollToSection('projects')}
               size="lg"
-              className="neural-glow bg-gradient-primary hover:bg-gradient-secondary border-0 text-white font-semibold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 shadow-primary"
+              className="bg-primary hover:bg-primary/90 border-0 text-primary-foreground font-semibold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
             >
               View My Work
               <ArrowDownIcon className="ml-2 h-5 w-5" />
@@ -99,7 +99,7 @@ export const Hero = () => {
               onClick={downloadCV}
               variant="outline"
               size="lg"
-              className="border-2 border-primary/50 text-primary hover:bg-primary/10 hover:border-primary font-semibold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+              className="border-2 border-primary/50 text-foreground hover:bg-muted hover:border-primary font-semibold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
             >
               <DownloadIcon className="mr-2 h-5 w-5" />
               Download CV

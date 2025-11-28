@@ -55,7 +55,7 @@ export const Experience = () => {
                   <div className="absolute left-6 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background hidden md:block z-10" />
 
                   <div className="md:ml-20">
-                    <div className="glass-card p-8 rounded-2xl neural-glow">
+                    <div className="glass-card p-8 rounded-2xl">
                       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                         <div>
                           <h3 className="text-2xl font-bold text-foreground mb-2">

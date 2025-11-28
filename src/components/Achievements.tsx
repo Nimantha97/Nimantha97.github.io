@@ -60,8 +60,8 @@ export const Achievements = () => {
                 <motion.div
                   key={achievement.id}
                   variants={itemVariants}
-                  className="glass-card p-8 rounded-2xl neural-glow group"
-                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="glass-card p-8 rounded-2xl group"
+                  whileHover={{ y: -3 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <div className="flex items-start space-x-4">
