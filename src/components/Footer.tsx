@@ -47,25 +47,25 @@ export const Footer = () => {
             <div className="h-px bg-gradient-to-l from-transparent to-primary/50 flex-1" />
           </motion.div>
 
-          {/* Made with love */}
-          <motion.div
-            className="flex items-center justify-center space-x-2 text-sm text-muted-foreground"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <span>Built with</span>
-            <motion.div
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            >
-              <Heart className="w-4 h-4 text-red-400 fill-current" />
-            </motion.div>
-            <span>using</span>
-            <Code2 className="w-4 h-4 text-primary" />
-            <span>React, TypeScript & Framer Motion</span>
-          </motion.div>
+          {/*/!* Made with love *!/*/}
+          {/*<motion.div*/}
+          {/*  className="flex items-center justify-center space-x-2 text-sm text-muted-foreground"*/}
+          {/*  initial={{ opacity: 0 }}*/}
+          {/*  whileInView={{ opacity: 1 }}*/}
+          {/*  viewport={{ once: true }}*/}
+          {/*  transition={{ duration: 0.6, delay: 0.4 }}*/}
+          {/*>*/}
+          {/*  <span>Built with</span>*/}
+          {/*  <motion.div*/}
+          {/*    animate={{ scale: [1, 1.2, 1] }}*/}
+          {/*    transition={{ duration: 1.5, repeat: Infinity }}*/}
+          {/*  >*/}
+          {/*    <Heart className="w-4 h-4 text-red-400 fill-current" />*/}
+          {/*  </motion.div>*/}
+          {/*  <span>using</span>*/}
+          {/*  <Code2 className="w-4 h-4 text-primary" />*/}
+          {/*  <span>React, TypeScript & Framer Motion</span>*/}
+          {/*</motion.div>*/}
 
           {/* Copyright */}
           <motion.p
