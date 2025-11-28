@@ -69,10 +69,10 @@ export const Projects = () => {
               <motion.div
                 key={project.id}
                 variants={itemVariants}
-                className="glass-card rounded-2xl overflow-hidden neural-glow"
+                className="glass-card rounded-2xl overflow-hidden"
                 onMouseEnter={() => setHoveredProject(project.id)}
                 onMouseLeave={() => setHoveredProject(null)}
-                whileHover={{ y: -5 }}
+                whileHover={{ y: -3 }}
                 transition={{ duration: 0.3 }}
               >
                 <div className={`grid ${index % 2 === 0 ? 'lg:grid-cols-[1fr,1.2fr]' : 'lg:grid-cols-[1.2fr,1fr]'} gap-8 p-8`}>

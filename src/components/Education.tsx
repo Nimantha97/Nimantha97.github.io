@@ -38,7 +38,7 @@ export const Education = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="max-w-4xl mx-auto">
-            <div className="glass-card p-8 md:p-12 rounded-2xl neural-glow">
+            <div className="glass-card p-8 md:p-12 rounded-2xl">
               <div className="text-center mb-8">
                 <motion.div
                   className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6"
@@ -107,8 +107,8 @@ export const Education = () => {
                     ].map((area, index) => (
                       <motion.div
                         key={index}
-                        className="bg-gradient-to-br from-muted/30 to-muted/10 p-3 rounded-lg text-center text-sm font-medium text-muted-foreground hover:text-foreground hover:from-primary/10 hover:to-secondary/10 transition-all duration-200 cursor-default"
-                        whileHover={{ scale: 1.05 }}
+                        className="bg-muted/30 p-3 rounded-lg text-center text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 border border-transparent hover:border-primary/30 transition-all duration-200 cursor-default"
+                        whileHover={{ scale: 1.02 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
                         {area}

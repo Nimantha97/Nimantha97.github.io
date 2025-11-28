@@ -84,7 +84,7 @@ export const Skills = () => {
               <motion.div
                 key={skillCategory.category}
                 variants={itemVariants}
-                className="glass-card p-8 rounded-2xl neural-glow"
+                className="glass-card p-8 rounded-2xl"
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.3 }}
               >
@@ -101,19 +101,19 @@ export const Skills = () => {
                       className="group relative"
                       onMouseEnter={() => setHoveredSkill(skill)}
                       onMouseLeave={() => setHoveredSkill(null)}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
                     >
-                      <div className="bg-gradient-to-br from-muted/50 to-muted/20 p-4 rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 cursor-pointer">
+                      <div className="bg-muted/30 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all duration-300 cursor-pointer">
                         <div className="text-center">
                           <div className="text-sm font-medium text-foreground group-hover:text-primary transition-colors duration-200">
                             {skill}
                           </div>
                           
                           {/* Skill level indicator */}
-                          <div className="mt-2 w-full bg-muted/30 rounded-full h-1 overflow-hidden">
+                          <div className="mt-2 w-full bg-background/50 rounded-full h-1 overflow-hidden">
                             <motion.div
-                              className="h-full bg-gradient-primary rounded-full"
+                              className="h-full bg-primary rounded-full"
                               initial={{ width: 0 }}
                               animate={{ 
                                 width: hoveredSkill === skill ? "100%" : `${75 + Math.random() * 25}%` 
@@ -122,9 +122,6 @@ export const Skills = () => {
                             />
                           </div>
                         </div>
-
-                        {/* Hover glow effect */}
-                        <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
                       </div>
                     </motion.div>
                   ))}

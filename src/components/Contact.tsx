@@ -133,11 +133,11 @@ export const Contact = () => {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-12 h-12 bg-muted/50 rounded-xl flex items-center justify-center hover:bg-primary/10 transition-colors duration-200 group"
-                        whileHover={{ scale: 1.1, y: -2 }}
+                        className="w-12 h-12 bg-muted rounded-xl flex items-center justify-center hover:bg-muted/80 border border-border hover:border-primary/50 transition-all duration-200 group"
+                        whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <social.icon className={`w-5 h-5 ${social.color} group-hover:text-primary transition-colors duration-200`} />
+                        <social.icon className="w-5 h-5 text-foreground group-hover:text-primary transition-colors duration-200" />
                       </motion.a>
                     ))}
                   </div>

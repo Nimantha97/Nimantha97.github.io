@@ -106,8 +106,8 @@ export const About = () => {
             ].map((stat, index) => (
               <motion.div
                 key={index}
-                className="text-center p-6 glass-card rounded-xl neural-glow"
-                whileHover={{ scale: 1.05, y: -5 }}
+                className="text-center p-6 glass-card rounded-xl"
+                whileHover={{ scale: 1.02, y: -3 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="text-3xl md:text-4xl font-bold text-gradient bg-gradient-primary bg-clip-text text-transparent mb-2">
