@@ -35,22 +35,23 @@ export interface Achievement {
 export const personalInfo = {
   name: "Nimantha Gayan",
   title: "AI Software Engineer | Data Scientist | Cloud Enthusiast",
-  tagline: "Building intelligent solutions that bridge the gap between AI innovation and real-world impact",
-  email: "nimantha.gayan@example.com",
+  tagline: "Building scalable full-stack and ML/AI solutions across production environments",
+  email: "nimanthagayan0309@gmail.com",
   linkedin: "https://linkedin.com/in/nimantha-gayan",
   github: "https://github.com/nimantha-gayan",
+  phone: "0713377806",
   location: "Sri Lanka",
   cvPath: "/Nimantha_Gayan_CV.pdf"
 };
 
 export const aboutMe = {
-  intro: "Passionate AI Software Engineer with expertise in machine learning, cloud computing, and full-stack development. I specialize in creating intelligent systems that solve complex real-world problems through innovative AI solutions.",
+  intro: "Proactive Software Engineer and Data Scientist with 2.5+ years of experience building scalable full-stack and ML/AI solutions across production environments. Experienced in developing robust applications using Java Spring Boot, React, TypeScript, and Python, and delivering end-to-end ML workflows from data preprocessing to deployment using TensorFlow, Docker, and AWS CI/CD pipelines.",
   highlights: [
-    "5+ years experience in AI/ML development",
-    "Expert in React, Spring Boot, and cloud technologies",
+    "2.5+ years experience in AI/ML & full-stack development",
+    "Expert in React, Spring Boot, TensorFlow & cloud technologies",
     "Published researcher in AI and computer vision",
-    "Award-winning hackathon participant",
-    "IEEE active member and community leader"
+    "Strong background in RESTful APIs & containerized deployments",
+    "Agile team collaboration & high-quality code delivery"
   ]
 };
 
@@ -59,180 +60,186 @@ export const experiences: Experience[] = [
     id: 1,
     company: "Dialog Axiata PLC",
     position: "Software Engineer",
-    duration: "2022 - Present",
+    duration: "January 2025 – Present",
     description: [
-      "Developed scalable web applications using React.js and Spring Boot",
-      "Implemented microservices architecture for telecom billing systems",
-      "Optimized database performance resulting in 40% faster query execution",
-      "Led a team of 3 developers in agile development processes"
+      "Developed and maintained the admin dashboard for the IdeaBiz platform using React, TypeScript, Redux Toolkit, Axios, and TailwindCSS",
+      "Ensured fully responsive UI/UX compatible with dark and light modes, implementing role-based access control (RBAC) for secure multi-tenant operations",
+      "Built RESTful APIs with Java Spring Boot, JPA repositories, and MySQL, achieving 98% code coverage with Mockito and JUnit",
+      "Collaborated in Agile sprints, contributing to code reviews, CI/CD pipelines with Jenkins and Bitbucket"
     ],
-    technologies: ["React", "Spring Boot", "Java", "PostgreSQL", "AWS", "Docker"]
+    technologies: ["React", "TypeScript", "Redux Toolkit", "Spring Boot", "MySQL", "Jenkins", "TailwindCSS"]
   },
   {
     id: 2,
-    company: "Softvil (Pvt) Ltd",
-    position: "Computer Vision Engineer",
-    duration: "2021 - 2022",
+    company: "Softvil Technologies",
+    position: "AI-Computer Vision Engineer Trainee",
+    duration: "February 2024 – January 2025",
     description: [
-      "Developed computer vision models for real-time object detection",
-      "Implemented face recognition systems using deep learning",
-      "Created automated quality control systems for manufacturing",
-      "Achieved 95% accuracy in product defect detection"
+      "Developed production-grade face recognition system using Python and TensorFlow",
+      "Optimized deep learning models (FACENet, VGG16, MobileNet) for high accuracy with minimal data",
+      "Deployed via Flask-based APIs for real-time processing",
+      "Optimized data preprocessing pipelines using Pandas and NumPy, reducing processing time through efficient vectorization"
     ],
-    technologies: ["Python", "TensorFlow", "OpenCV", "PyTorch", "Docker", "FastAPI"]
+    technologies: ["Python", "TensorFlow", "FACENet", "Flask", "Pandas", "NumPy", "OpenCV"]
   },
   {
     id: 3,
-    company: "MAS Capital (Pvt) Ltd",
-    position: "Data Analyst",
-    duration: "2020 - 2021",
+    company: "MAS Capital (Private) Limited",
+    position: "Data Science Intern",
+    duration: "January 2023 – June 2023",
     description: [
-      "Built predictive models for financial forecasting",
-      "Created interactive dashboards using Power BI",
-      "Automated reporting processes reducing manual work by 60%",
-      "Analyzed market trends and provided strategic insights"
+      "Automated data processing scripts in Python, integrating with Excel for Power BI",
+      "Implemented forecasting models (ARIMA, Exponential Smoothing) improving RFM score accuracy by 25%",
+      "Developed Power BI dashboards with DAX queries and automated alert systems using Microsoft Power Automate",
+      "Enhanced accounts receivable analytics through predictive models"
     ],
-    technologies: ["Power BI", "Python", "SQL", "Excel", "R", "Tableau"]
+    technologies: ["Python", "Power BI", "DAX", "Excel", "Power Automate", "ARIMA"]
   }
 ];
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "AI-Powered Chatbot Platform",
-    description: "Intelligent conversational AI system with natural language processing capabilities and multi-domain knowledge integration.",
-    technologies: ["Python", "TensorFlow", "NLP", "React", "FastAPI", "PostgreSQL"],
-    imageUrl: "/images/chatbot.png",
-    videoUrl: "/videos/chatbot-demo.mp4",
+    title: "IdeaBiz Platform Admin Dashboard",
+    description: "Enterprise-grade admin dashboard with complete frontend using React, TypeScript, Redux Toolkit for state management, and TailwindCSS for modern UI design. Currently serving in live production.",
+    technologies: ["React", "TypeScript", "Redux", "Java Spring Boot", "MySQL", "Jenkins"],
+    imageUrl: "/images/dashboard.png",
     highlights: [
-      "Processes 10K+ queries daily",
-      "95% customer satisfaction rate",
-      "Multi-language support",
-      "Real-time sentiment analysis"
+      "Role-based access control (RBAC)",
+      "Dark/light theme switching",
+      "Fully responsive design",
+      "98% code coverage with JUnit"
     ]
   },
   {
     id: 2,
-    title: "FaceNet Recognition System",
-    description: "Advanced facial recognition system using deep learning for security and attendance management applications.",
-    technologies: ["PyTorch", "OpenCV", "Python", "Flask", "PostgreSQL", "AWS"],
+    title: "Production-Ready Face Recognition System",
+    description: "Production-grade face recognition system using Python and TensorFlow, optimizing deep learning models (FACENet, VGG16, MobileNet) for high accuracy with minimal data.",
+    technologies: ["Python", "TensorFlow", "FACENet", "VGG16", "Flask", "PostgreSQL"],
     imageUrl: "/images/facenet.png",
     highlights: [
-      "99.7% recognition accuracy",
-      "Real-time processing",
-      "GDPR compliant",
-      "Scalable cloud deployment"
+      "High accuracy with minimal data",
+      "Real-time processing via Flask APIs",
+      "Optimized deep learning models",
+      "Efficient batch processing"
     ]
   },
   {
     id: 3,
-    title: "Smart Yoga Pose Classifier",
-    description: "Computer vision application that analyzes yoga poses in real-time and provides corrective feedback using pose estimation.",
-    technologies: ["MediaPipe", "TensorFlow", "React Native", "Python", "Firebase"],
+    title: "Real-time Yoga Pose Estimation System",
+    description: "CNN-based system for Tadasana pose alignment feedback using MediaPipe pose estimation. Published research abstract at 8th International Research Conference, Uva Wellassa University.",
+    technologies: ["Python", "Flask", "CNN", "MediaPipe", "TensorFlow"],
     imageUrl: "/images/yoga.png",
     highlights: [
-      "20+ yoga poses supported",
-      "Real-time pose correction",
-      "Mobile app with 50K+ downloads",
-      "AI-powered feedback system"
+      "Real-time pose correction feedback",
+      "Live video processing with Flask",
+      "Published research paper",
+      "MediaPipe pose estimation"
     ]
   },
   {
     id: 4,
-    title: "Financial Analytics Dashboard",
-    description: "Comprehensive business intelligence platform for financial data analysis and predictive modeling.",
-    technologies: ["React", "D3.js", "Python", "FastAPI", "PostgreSQL", "Docker"],
-    videoUrl: "/videos/dashboard-demo.mp4",
-    imageUrl: "/images/dashboard.png",
+    title: "Production-Ready E-commerce Chatbot",
+    description: "Intelligent chatbot using Flask and LangChain for personalized product recommendations and customer inquiries. Deployed containerized application on AWS EC2.",
+    technologies: ["Python", "Flask", "LangChain", "OpenAI", "AstraDB", "AWS", "Docker"],
+    imageUrl: "/images/chatbot.png",
     highlights: [
-      "Real-time data visualization",
-      "Predictive analytics",
-      "Custom KPI tracking",
-      "Multi-tenant architecture"
+      "RAG pipeline with OpenAI embeddings",
+      "AstraDB vector store integration",
+      "Automated CI/CD pipeline",
+      "AWS EC2 deployment"
     ]
   },
   {
     id: 5,
-    title: "Neural Network Optimizer",
-    description: "Advanced optimization framework for deep neural networks with automated hyperparameter tuning and performance enhancement.",
-    technologies: ["Python", "PyTorch", "Optuna", "MLflow", "Docker", "Kubernetes"],
+    title: "Multimodal Sight & Sound AI Agent",
+    description: "Multimodal AI agent capable of answering user questions based on audio, image, and video inputs using a unified FastAPI backend with Whisper and BLIP integration.",
+    technologies: ["Python", "FastAPI", "Whisper", "BLIP", "Groq LLaMA", "MLflow"],
     imageUrl: "/images/neural-optimizer.png",
     highlights: [
-      "30% faster training times",
-      "Automated hyperparameter tuning",
-      "Multi-GPU support",
-      "Model versioning system"
+      "Speech-to-text with Groq Whisper",
+      "Image captioning using BLIP",
+      "MLflow experiment tracking",
+      "Unified multimodal backend"
     ]
   }
 ];
 
 export const skills: Skill[] = [
   {
+    category: "Programming & Development",
+    items: ["Python", "Java", "JavaScript", "TypeScript", "C", "SQL", "HTML5", "CSS3"]
+  },
+  {
+    category: "Frontend Technologies",
+    items: ["React", "Redux Toolkit", "Next.js", "TailwindCSS", "Bootstrap", "Responsive Design"]
+  },
+  {
+    category: "Backend & APIs",
+    items: ["Java Spring Boot", "Flask", "FastAPI", "RESTful APIs", "JPA/Hibernate"]
+  },
+  {
     category: "AI & Machine Learning",
-    items: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLP", "Computer Vision", "Deep Learning", "MLOps"]
+    items: ["TensorFlow", "PyTorch", "LangChain", "OpenAI API", "CNN", "RNN", "LSTM", "Transformers", "RAG Pipelines"]
   },
   {
-    category: "Programming Languages",
-    items: ["Python", "Java", "JavaScript", "TypeScript", "C++", "R", "SQL"]
-  },
-  {
-    category: "Web Technologies",
-    items: ["React", "Next.js", "Spring Boot", "FastAPI", "Node.js", "GraphQL", "REST APIs"]
-  },
-  {
-    category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform", "Jenkins", "GitLab"]
+    category: "Data Science & NLP",
+    items: ["Pandas", "NumPy", "Matplotlib", "NLP", "Feature Engineering", "Data Preprocessing"]
   },
   {
     category: "Databases",
-    items: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Neo4j", "Elasticsearch"]
+    items: ["MySQL", "PostgreSQL", "MongoDB", "AstraDB", "ChromaDB"]
   },
   {
-    category: "Tools & Frameworks",
-    items: ["Git", "Jupyter", "Power BI", "Tableau", "Figma", "Postman", "VS Code"]
+    category: "DevOps & Cloud",
+    items: ["AWS (EC2, S3, Lambda)", "Docker", "Jenkins", "GitHub Actions", "CI/CD Pipelines"]
+  },
+  {
+    category: "Testing & Tools",
+    items: ["JUnit", "Mockito", "Postman", "Git", "Bitbucket", "Agile/Scrum"]
   }
 ];
 
 export const achievements: Achievement[] = [
   {
     id: 1,
-    title: "1st Place - National AI Hackathon 2023",
-    description: "Won first place for developing an AI-powered healthcare diagnosis system",
-    date: "2023",
-    type: "hackathon"
-  },
-  {
-    id: 2,
-    title: "IEEE Outstanding Member Award",
-    description: "Recognized for exceptional contributions to IEEE student branch activities",
-    date: "2022",
-    type: "award"
-  },
-  {
-    id: 3,
-    title: "Research Publication - AI in Healthcare",
-    description: "Published paper on 'Deep Learning Applications in Medical Image Analysis' in IEEE Conference",
-    date: "2023",
+    title: "Published Research Paper",
+    description: "CNN-powered pose estimation systems published at 8th International Research Conference, Uva Wellassa University",
+    date: "2024",
     type: "research"
   },
   {
+    id: 2,
+    title: "4th Place - Junior Hackathon 2021",
+    description: "Developed data-driven solution for real-world problem at Junior Hackathon",
+    date: "2021",
+    type: "hackathon"
+  },
+  {
+    id: 3,
+    title: "Organizing Committee - RealHack",
+    description: "Organizing Committee Member for RealHack 3.0, 4.0, 5.0 - Software Engineering Students Association",
+    date: "2022-2024",
+    type: "award"
+  },
+  {
     id: 4,
-    title: "AWS Solutions Architect Certification",
-    description: "Achieved AWS Solutions Architect Associate certification",
-    date: "2022",
-    type: "certification"
+    title: "IEEE Student Branch Committee Member",
+    description: "Active Committee Member of IEEE Student Branch, University of Kelaniya (2022-2024)",
+    date: "2022-2024",
+    type: "award"
   }
 ];
 
 export const education = {
-  degree: "B.Sc. (Hons) Software Engineering",
-  university: "University of Colombo School of Computing",
-  gpa: "3.55",
-  duration: "2018 - 2022",
+  degree: "Bachelor of Science (Honours) in Software Engineering",
+  university: "University of Kelaniya",
+  gpa: "3.55/4.0",
+  duration: "2020 – 2024",
   highlights: [
-    "Specialized in Artificial Intelligence and Machine Learning",
-    "Final Year Project: AI-powered Code Review System",
-    "Active member of IEEE Student Branch",
-    "Dean's List for Academic Excellence (2021, 2022)"
+    "Specialized in AI, Machine Learning & Full-Stack Development",
+    "G.C.E. Advanced Level (2018): Combined Mathematics - A, Physics - B, Chemistry - B",
+    "Published research on CNN-powered pose estimation systems",
+    "Active member of IEEE Student Branch & SESA"
   ]
 };

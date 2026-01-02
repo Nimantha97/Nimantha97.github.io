@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Play, ArrowRight } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { projects } from '@/utils/portfolioData';
-import { useState } from 'react';
 
 // Import project images
 import chatbotImg from '/images/chatbot.png';
@@ -21,133 +20,103 @@ const projectImages = {
 };
 
 export const Projects = () => {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
+        staggerChildren: 0.15
       }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={containerVariants}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+    <section id="projects" className="py-16 md:py-20 bg-background relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={containerVariants}
+        >
+          <motion.div variants={itemVariants} className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Featured <span className="text-gradient bg-gradient-primary bg-clip-text text-transparent">Projects</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-              Innovative solutions that showcase the intersection of AI, software engineering, and real-world impact
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+              Innovative solutions showcasing AI, software engineering, and real-world impact
             </p>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
           </motion.div>
 
-          <div className="grid gap-8">
+          <div className="grid gap-6 md:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
                 variants={itemVariants}
-                className="glass-card rounded-2xl overflow-hidden"
-                onMouseEnter={() => setHoveredProject(project.id)}
-                onMouseLeave={() => setHoveredProject(null)}
-                whileHover={{ y: -3 }}
-                transition={{ duration: 0.3 }}
+                className="glass-card rounded-xl md:rounded-2xl overflow-hidden"
               >
-                <div className={`grid ${index % 2 === 0 ? 'lg:grid-cols-[1fr,1.2fr]' : 'lg:grid-cols-[1.2fr,1fr]'} gap-8 p-8`}>
+                <div className={`grid lg:grid-cols-2 gap-5 md:gap-6 lg:gap-8 p-5 md:p-6 lg:p-8`}>
                   {/* Project Image */}
-                  <div className={`${index % 2 !== 0 ? 'lg:order-2' : ''} relative group`}>
-                    <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 p-4">
+                  <div className={`${index % 2 !== 0 ? 'lg:order-2' : ''} relative`}>
+                    <div className="relative overflow-hidden rounded-lg md:rounded-xl bg-muted/30">
                       <img
                         src={projectImages[project.imageUrl as keyof typeof projectImages]}
                         alt={project.title}
-                        className="w-full h-64 md:h-72 object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-48 md:h-56 lg:h-64 object-cover"
                       />
-                      
-                      {/* Video Play Button */}
-                      {project.videoUrl && (
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <motion.button
-                            className="w-16 h-16 bg-primary/90 rounded-full flex items-center justify-center backdrop-blur-sm border-2 border-primary-glow/50"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ 
-                              opacity: hoveredProject === project.id ? 1 : 0.7,
-                              scale: hoveredProject === project.id ? 1.1 : 1 
-                            }}
-                            transition={{ duration: 0.3 }}
-                          >
-                            <Play className="w-6 h-6 text-white ml-1" />
-                          </motion.button>
-                        </div>
-                      )}
-
-                      {/* Overlay Gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                   </div>
 
                   {/* Project Content */}
-                  <div className={`${index % 2 !== 0 ? 'lg:order-1' : ''} flex flex-col justify-center space-y-6`}>
+                  <div className={`${index % 2 !== 0 ? 'lg:order-1' : ''} flex flex-col justify-center space-y-4`}>
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                      <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                         {project.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed text-lg">
+                      <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                         {project.description}
                       </p>
                     </div>
 
                     {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech) => (
+                    <div className="flex flex-wrap gap-1.5 md:gap-2">
+                      {project.technologies.slice(0, 5).map((tech) => (
                         <Badge
                           key={tech}
                           variant="secondary"
-                          className="bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
+                          className="bg-primary/10 text-primary border border-primary/20 text-xs"
                         >
                           {tech}
                         </Badge>
                       ))}
+                      {project.technologies.length > 5 && (
+                        <Badge variant="secondary" className="bg-muted text-muted-foreground text-xs">
+                          +{project.technologies.length - 5}
+                        </Badge>
+                      )}
                     </div>
 
                     {/* Highlights */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {project.highlights.map((highlight, idx) => (
                         <div key={idx} className="flex items-center space-x-2">
-                          <ArrowRight className="h-4 w-4 text-secondary flex-shrink-0" />
-                          <span className="text-sm text-muted-foreground">{highlight}</span>
+                          <ArrowRight className="h-3 w-3 md:h-4 md:w-4 text-primary flex-shrink-0" />
+                          <span className="text-xs md:text-sm text-muted-foreground">{highlight}</span>
                         </div>
                       ))}
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex gap-4">
+                    <div className="flex gap-3 pt-2">
                       {project.liveUrl && (
                         <Button
-                          className="bg-gradient-primary hover:bg-gradient-secondary text-white border-0"
+                          className="bg-primary hover:bg-primary/90 text-primary-foreground border-0"
                           size="sm"
                         >
                           <ExternalLink className="w-4 h-4 mr-2" />
@@ -158,7 +127,7 @@ export const Projects = () => {
                         <Button
                           variant="outline"
                           size="sm"
-                          className="border-primary/50 text-primary hover:bg-primary/10"
+                          className="border-primary/50 text-foreground hover:bg-primary/10"
                         >
                           <Github className="w-4 h-4 mr-2" />
                           View Code

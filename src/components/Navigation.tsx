@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Briefcase, Code, Award, GraduationCap, Mail } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, Code, Award, GraduationCap, Mail, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navItems = [
@@ -8,8 +8,7 @@ const navItems = [
   { id: 'about', label: 'About', icon: User },
   { id: 'experience', label: 'Experience', icon: Briefcase },
   { id: 'projects', label: 'Projects', icon: Code },
-  { id: 'achievements', label: 'Achievements', icon: Award },
-  { id: 'education', label: 'Education', icon: GraduationCap },
+  { id: 'skills', label: 'Skills', icon: Wrench },
   { id: 'contact', label: 'Contact', icon: Mail },
 ];
 
