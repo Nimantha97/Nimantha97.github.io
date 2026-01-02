@@ -37,8 +37,8 @@ export const personalInfo = {
   title: "AI Software Engineer | Data Scientist | Cloud Enthusiast",
   tagline: "Building scalable full-stack and ML/AI solutions across production environments",
   email: "nimanthagayan0309@gmail.com",
-  linkedin: "https://linkedin.com/in/nimantha-gayan",
-  github: "https://github.com/nimantha-gayan",
+  linkedin: "https://www.linkedin.com/in/nimantha-gayan/",
+  github: "https://github.com/Nimantha97",
   phone: "0713377806",
   location: "Sri Lanka",
   cvPath: "/Nimantha_Gayan_CV.pdf"
