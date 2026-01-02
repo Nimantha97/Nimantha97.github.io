@@ -16,25 +16,13 @@ const Index = () => {
       <div id="hero">
         <Hero />
       </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="experience">
-        <Experience />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
+      <About />
+      <Experience />
+      <Projects />
       <Skills />
-      <div id="achievements">
-        <Achievements />
-      </div>
-      <div id="education">
-        <Education />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <Achievements />
+      <Education />
+      <Contact />
       <Footer />
     </div>
   );
